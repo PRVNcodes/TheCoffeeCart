@@ -3,9 +3,9 @@
   @import url('https://fonts.googleapis.com/css2?family=Solway:wght@500&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Solway:wght@800&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
-* {
-    background-color: rgb(247, 236, 225);
-}
+
+  * {background-color: rgb(247, 236, 225);}
+
 
 .HeadingContainer {
     display: flex;
@@ -14,8 +14,11 @@
   text-align: center;
   color: white;
   justify-content: center;
-  
+  margin: 1px;
+  flex: 1;
 }
+
+
 
 img {
     width: 600px;
@@ -27,6 +30,7 @@ img {
 
 
 
+
 .centered {
     position: absolute;
     top: 50%;
@@ -35,6 +39,7 @@ img {
     font-size: 100px;
     font-family: 'Tilt Warp';
     background-color: transparent;
+    margin: 1px;
   }
 .abovecentered  {
     position: absolute;
@@ -106,6 +111,7 @@ img {
         margin-bottom: 20px;
         font-style: 'medium';
         font-weight: 500;
+     
     } 
 
     .text2 {
@@ -161,5 +167,246 @@ img {
   
   #menusize {
   font-size: 75px;
+
   }
   
+  .container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .animated{
+    width: 400px;
+    height: 221px;
+    background-position: center;
+    background-size: cover;
+   
+  }
+
+
+
+  
+  .fadeinLeft{
+    background-image: url(https://www.onceuponachef.com/images/2017/12/cheesecake-1200x1393.jpg);
+    -webkit-animation: fadeinLeft 1.2s both;
+    -moz-animation: fadeinLeft 1.2s both;
+    -o-animation: fadeinLeft 1.2s both;
+    animation: fadeinLeft 1.2s both;
+
+  }
+
+  @-webkit-keyframes fadeinLeft {
+    0%{
+      opacity: 0;
+      -webkit-transform: translateX( -50px)
+    }
+    100%{
+      opacity: 1;
+      -webkit-transform:translateX(0);
+    }
+  }
+  @-moz-keyframes fadeinLeft {
+    0%{
+      opacity: 0;
+      -moz-transform: translateX( -50px)
+    }
+    100%{
+      opacity: 1;
+      -moz-transform:translateX(0);
+    }
+  }
+  @-o-keyframes fadeinLeft {
+    0%{
+      opacity: 0;
+      -o-transform: translateX( -50px)
+    }
+    100%{
+      opacity: 1;
+      -o-transform:translateX(0);
+    }
+  }
+  @keyframes fadeinLeft {
+    0%{
+      opacity: 0;
+      transform: translateX( -50px)
+    }
+    100%{
+      opacity: 1;
+      transform:translateX(0);
+    }
+  }
+
+  .fadeinRight{
+
+    background-image: url(https://www.jocooks.com/wp-content/uploads/2018/11/cheesecake-1-22.jpg);
+    -webkit-animation: fadeinRight 1.2s both;
+    -moz-animation: fadeinRight 1.2s both;
+    -o-animation: fadeinRight 1.2s both;
+    animation: fadeinRight 1.2s both;
+
+  }
+
+
+  @-webkit-keyframes fadeinRight {
+    0%{
+      opacity: 0;
+      -webkit-transform: translateX( 50px)
+    }
+    100%{
+      opacity: 1;
+      -webkit-transform:translateX(0);
+    }
+  }
+  @-moz-keyframes fadeinRight {
+    0%{
+      opacity: 0;
+      -moz-transform: translateX( 50px)
+    }
+    100%{
+      opacity: 1;
+      -moz-transform:translateX(0);
+    }
+  }
+  @-o-keyframes fadeinRight {
+    0%{
+      opacity: 0;
+      -o-transform: translateX( 50px)
+    }
+    100%{
+      opacity: 1;
+      -o-transform:translateX(0);
+    }
+  }
+  @keyframes fadeinRight {
+    0%{
+      opacity: 0;
+      transform: translateX( 50px)
+    }
+    100%{
+      opacity: 1;
+      transform:translateX(0);
+    }
+  }
+ 
+  .fadeinTop{
+
+    background-image: url(https://joyfoodsunshine.com/wp-content/uploads/2022/03/best-cheesecake-recipe-6.jpg);
+    -webkit-animation: fadeinTop 1.2s both;
+    -moz-animation: fadeinTop 1.2s both;
+    -o-animation: fadeinTop 1.2s both;
+    animation: fadeinTop 1.2s both;
+
+  }
+
+  @-webkit-keyframes fadeinTop {
+    0%{
+      opacity: 0;
+      -webkit-transform: translateY( -50px)
+    }
+    100%{
+      opacity: 1;
+      -webkit-transform:translateY(0);
+    }
+  }
+  @-moz-keyframes fadeinTop {
+    0%{
+      opacity: 0;
+      -moz-transform: translateY( -50px)
+    }
+    100%{
+      opacity: 1;
+      -moz-transform:translateY( 0);
+    }
+  }
+  @-o-keyframes fadeinTop {
+    0%{
+      opacity: 0;
+      -o-transform: translateY( -50px)
+    }
+    100%{
+      opacity: 1;
+      -o-transform:translateY(0);
+    }
+  }
+  @keyframes fadeinTop {
+    0%{
+      opacity: 0;
+      transform: translateY( -50px)
+    }
+    100%{
+      opacity: 1;
+      transform:translateY(0);
+    }
+  }
+
+  
+  .fadeLeft{
+    -webkit-animation: fadeinLeft 1.2s both;
+    -moz-animation: fadeinLeft 1.2s both;
+    -o-animation: fadeinLeft 1.2s both;
+    animation: fadeinLeft 1.2s both;
+
+  }
+
+  @-webkit-keyframes fadeLeft {
+    0%{
+      opacity: 0;
+      -webkit-transform: translateX( -50px)
+    }
+    100%{
+      opacity: 1;
+      -webkit-transform:translateX(0);
+    }
+  }
+  @-moz-keyframes fadeLeft {
+    0%{
+      opacity: 0;
+      -moz-transform: translateX( -50px)
+    }
+    100%{
+      opacity: 1;
+      -moz-transform:translateX(0);
+    }
+  }
+  @-o-keyframes fadeLeft {
+    0%{
+      opacity: 0;
+      -o-transform: translateX( -50px)
+    }
+    100%{
+      opacity: 1;
+      -o-transform:translateX(0);
+    }
+  }
+  @keyframes fadeLeft {
+    0%{
+      opacity: 0;
+      transform: translateX( -50px)
+    }
+    100%{
+      opacity: 1;
+      transform:translateX(0);
+    }
+  }
+  
+  .scrollFade {
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  .scrollFade--hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .scrollFade--visible {
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  .scrollFade--animate {
+    transition: opacity 0.4s ease-in-out;
+  }
+ 
+
