@@ -2,6 +2,7 @@ const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if(entry.isIntersecting){
       document.querySelectorAll(".animated")[0].classList.add("fadeinLeft");
+	  
       document.querySelectorAll(".animated")[1].classList.add("fadeinTop");
       document.querySelectorAll(".animated")[2].classList.add("fadeinRight");
 
@@ -51,6 +52,7 @@ const scrollFade = () => {
 
 document.addEventListener('scroll', scrollFade);
 window.addEventListener('resize', scrollFade);
+
 
 
 

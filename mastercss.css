@@ -4,7 +4,15 @@
   @import url('https://fonts.googleapis.com/css2?family=Solway:wght@800&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
-  * {background-color: rgb(247, 236, 225);}
+  * {
+    background-color: rgb(247, 236, 225);
+    padding: 0;
+    margin: 0;
+  }
+
+  .body {
+    padding: 0;
+  }
 
 
 .HeadingContainer {
@@ -16,6 +24,8 @@
   justify-content: center;
   margin: 1px;
   flex: 1;
+  padding: 0;
+  margin: 0;
 }
 
 
@@ -340,6 +350,8 @@ img {
     }
   }
 
+
+  
   
   .fadeLeft{
     -webkit-animation: fadeinLeft 1.2s both;
@@ -390,6 +402,33 @@ img {
     }
   }
   
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   .scrollFade {
     opacity: 1;
     pointer-events: all;
