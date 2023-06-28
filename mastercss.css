@@ -12,7 +12,14 @@
     
   }
 
-  
+  #navbar {
+   
+    position: fixed; /* Make it stick/fixed */
+    top: 0; /* Stay on top */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  }
+ 
 
   .navbar {
     position: fixed;
@@ -29,6 +36,7 @@
     z-index: 1000;
     box-shadow: 0 0 2px var(--grey-color-light);
     background-color: rgb(72, 82, 146);
+   
     
   }
   .item {

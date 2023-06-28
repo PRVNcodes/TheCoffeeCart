@@ -1,27 +1,3 @@
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if(entry.isIntersecting){
-      document.querySelectorAll(".animated")[0].classList.add("fadeinLeft");
-	  
-      document.querySelectorAll(".animated")[1].classList.add("fadeinTop");
-      document.querySelectorAll(".animated")[2].classList.add("fadeinRight");
-
-      document.querySelectorAll(".textsection").add("fadeLeft")
-      
-
-    } 
-  })
-})
-
-observer.observe(document.querySelector(".container"))
-
-
-
-
-
-
-
-
 
 const fadeElements = document.getElementsByClassName('scrollFade');
 
@@ -53,7 +29,16 @@ const scrollFade = () => {
 document.addEventListener('scroll', scrollFade);
 window.addEventListener('resize', scrollFade);
 
-
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
 
 
 
